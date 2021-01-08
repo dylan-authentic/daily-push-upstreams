@@ -61,3 +61,20 @@ When considering how arrays work under the hood, it's key to know how the comput
 - Python's list class provides an abstraction known as dynamic arrays
     - A dynamic array implementation is constructed with an explicit length, yet the implementation creates greater capacity (more cells than specified) in order to make it easier to append new elements to the list
     - When the capacity has been reached by filling up all available space, the class creates creates a new collection block in memory with added capacity and sets the values of the new array to the values of the filled array. Now you have a new array with all the original values plus extra capacity for adding new values as needed, and the old array gets released back to the system since it's no longer needed
+    - A common rule is to increase the capacity of the new array to twice the length of the filled array
+
+- Initialize an empty list
+`list =[]`
+
+- That creates the following representation in memory - an empty memory block with length of size 1
+> v,v,v,[_],v,v,v,v
+
+- Append value 
+`list.append(a)`
+
+- That turns the underlying representation to the following:
+> v,v,v,[a],v,v,v,v
+
+- We notice that the memory block for the array is full, so we create a new memory block with size length * 2
+- We set the values of the old array to the values of the new array, and release the reference to the old array
+> j,j,j,j,[a,_,],j,j,j
