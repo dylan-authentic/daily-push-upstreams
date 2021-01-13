@@ -22,3 +22,4 @@ The following is an example of a 2 x 3 matrix (2 rows, 3 columns)
 
 __Note for programming purposes: In a row-major memory layout, the column indices change the fastest (vice versa for column-major)__
 
+[Reference](https://eli.thegreenplace.net/2015/memory-layout-of-multi-dimensional-arrays)
