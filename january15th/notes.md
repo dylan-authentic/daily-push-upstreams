@@ -29,3 +29,8 @@
 - Solutions to sub-problems are combined to solve the original problem
 
 “Divide-and-conquer” is most often used to traverse or search data structures such as binary search trees, graphs, and heaps. It also works for many sorting algorithms, like quicksort and heapsort.
+
+# Heap's Algorithm for Generating Permutations
+Heap's algorithm is an algorithm for generating permutations by swapping element's in place
+- Because of this, it uses little memory and could generate the next unique permutation from any permutation result
+
